@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <link rel="stylesheet" href="./index.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+   <script src="./index.js" defer></script>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+   <link rel="stylesheet" href="/resources/demos/style.css">
+   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+   
+
+  <script defer>
+    $( document ).tooltip();
+    $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+    $(document).ready(function(){
+
+        
+        setInterval(() => {
+    if(PICTUREDELAY == false){
+         CPICTURE++
+    if(CPICTURE == 7){
+        CPICTURE = 1
+    }
+    CHANGEPICTURE(CPICTURE);
+    THINGS()
+    }else{
+        PICTUREDELAY = false;
+    }
+}, 5000);
+
+
+
+
+    $("#T1").click(function(){THINGS();CHANGEPICTURE(1);});
+    $("#T2").click(function(){THINGS();CHANGEPICTURE(2);});
+    $("#T3").click(function(){THINGS();CHANGEPICTURE(3);});
+    $("#T4").click(function(){THINGS();CHANGEPICTURE(4);});
+    $("#T5").click(function(){THINGS();CHANGEPICTURE(5);});
+    $("#T6").click(function(){THINGS();CHANGEPICTURE(6);});
+     function THINGS(){
+     $("#IMG").fadeOut(100);
+     $("#IMG").fadeIn(100);
+     }
+     $( function() {
+    $( "#FAQ" ).accordion();
+  } );
+  $( function() {
+    $( "#DP" ).datepicker();
+  } );
+
+});
+
+
+  
+
+  </script>
+</head>
+<body>
+    <nav class="NAV" id="NAVY">
+        <h1>Travel Agency</h1>
+        <div id="ITEMS">
+            <a href="#AB">About</a>
+            <a href="#SV">Services</a>
+            <a href="#FAQ">FAQ</a>
+        </div>
+        <div id="HAM">
+             <div></div>
+             <div></div>
+             <div></div>
+        </div>
+    </nav>
+    <main>
+
+
+ 
+     <section class="EFFECT">
+        <img id="IMG" src="">
+
+
+        <div class="BUTTONS" id="EF">
+               <div onclick="PICTUREDELAY = true" id="T1" class="btn"></div>
+               <div onclick="PICTUREDELAY = true" id="T2" class="btn"></div>
+               <div onclick="PICTUREDELAY = true" id="T3" class="btn"></div>
+               <div onclick="PICTUREDELAY = true" id="T4" class="btn"></div>
+               <div onclick="PICTUREDELAY = true" id="T5" class="btn"></div>
+               <div onclick="PICTUREDELAY = true" id="T6" class="btn"></div>
+        </div>
+
+
+     </section>
+
+      <section class="ABOUT" id="AB">
+        <div class="ABOUTS">
+              <h1>About us</h1>
+              <p>
+                We try to help people make <a title="Go from one place to another, typically over a distance of some length.">travel</a> arrangements, which might include booking flights, hotels,
+                sightseeing tours, and making dining <a title="A suggestion or proposal as to the best course of action, especially one put forward by an authoritative body.">recommendations</a>.
+                We assesses each customer's unique needs, preferences, and <a title="An estimate of income and expenditure for a set period of time.">budget</a> to ensure their trip goes as smoothly as possible.
+            </p>
+        </div>
+        <div class="ABOUTS">
+               <h1>Travel options</h1>
+               <p>South Island, New Zealand, Paris, Maui, Bora Bora, Tahiti, London, Rom, Italy, Japan, Alaska, nguilla, Antarctica, Bahamas, Barbados, Belizee, +more</p>
+        </div>
+      </section>
+          
+      <section class="Services" id="SV">
+             <div class="BOXY">
+                <h1>Plan a meeting</h1>
+                <div class="FORM">
+                <p>Date: <input type="text" id="datepicker"></p>
+                <p>Name: <input type="text"></p>
+                <p>Mail: <input type="text"></p>
+                <p>Phone: <input type="text"></p>
+            </div>
+
+            <button id="Enter">Enter</button>  
+
+              
+            
+             </div>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.264592725424!2d-112.15628968479953!3d33.49449248076133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b14a2dba679d3%3A0xe908a82642285120!2sCancun%20Travel%20%26%20Tours!5e0!3m2!1sen!2sus!4v1670888066429!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+    </main>
+
+    <div class="FAQCONTAINER">
+      <h1>FAQ</h1>
+      <div id="FAQ">
+        <h3>Jack doesn't have toe beans(Stop asking)</h3>
+        <div>
+          <p>Jack has taken a test and has proven that he doesn't have toe beans because If a line segment adjoins the mid-point of any two sides of a triangle, then the line segment is said to be parallel to the remaining third side and its measure will be half of the third side. DE = (1/2 * BC).</p>
+        </div>
+        <h3>Why we don't need y=mx+b</h3>
+        <div>
+          <p>If anybody considers y = mx + b to be an equation, they simply are mistaken. It is clearly a function, in which an independent variable x is linked with a dependent variable y in such a way, that for every value of x, one and only one value of y will result. It becomes an equation if y is given a specific value, then x is not ‘independent’ anymore, it becomes the unknown variable, whose value to satisfy the equation will be found by solving the equation. In everyday speech, outside of the rigorous mathematical use of words, all equalities may be called equations, be it ‘identities’ (e.g. a + a = 2</p>
+        </div>
+        <h3>How is 0! =1?</h3>
+        <div>
+      This is a really interesting question. Back in my 10+2, most of the introductory books said that 0!=1 is by convention. But this "by convention" never ends the curiosity of anyone. While in my grads, I decided to give another try to find the answer. And then I came across a super amazing way of proving that 0!=1. Here it goes..
+      
+      Before we proceed I think its good idea to define Factorial first, here is what Wikipedia says:
+      It is a non-negative integer n, denoted by n!, is the product of all positive integer less than or equal to n.
+      n!=n∗(n−1)∗(n−2)∗(n−3)∗...3∗2∗1
+      
+      However the recursive defin
+        </div>
+      </div>
+      
+      
+      </div>
+
+</main>
+
+<footer>
+  <a href="#NAVY">Go To Top</a>
+  <h1>© 2022 Travel Agency. All Rights Reserved.</h1>
+</footer>
+
+</body>
+
+</html>

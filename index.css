@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+*{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+}
+.NAV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100%);
+    background-color: #234E70;
+    height: 100px;
+    color: #FBF8BE;
+    font-family: 'Lalezar', cursive;
+    font-size: 30px;
+    border-bottom: black 5px solid;
+}
+.NAV h1{
+    margin-left: 15px;
+}
+#ITEMS a{
+    text-decoration: none;
+    font-size: 25px;
+    color:#FBF8BE;
+    height: 100px;
+    padding: 20px;
+    border-radius: 5px;
+}
+#ITEMS a:hover{
+    background-color: #1f415b;
+}
+
+
+
+.EFFECT{
+    background-color: black;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    border-bottom: solid 5px rgb(68, 154, 204);
+}
+.EFFECT img{
+    width: 100%;
+    height: 100%;
+}
+main{
+    height: auto;
+    width: 100%;
+}
+
+
+.BUTTONS{
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BUTTONS div{
+    height: 20px;
+    width: 20px;
+    margin-inline: 5px;
+    border-radius: 50%;
+}
+.NONSELECTED{
+    background-color: #6087a4;
+}
+
+.SELECTED{
+    background-color: #96d2ff;
+}
+#HAM{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    margin-right: 15px;
+    padding: 15px;
+    border-radius: 50%;
+    display: none;
+}
+#HAM:hover{
+    background-color: #323436;
+}
+#HAM div{
+ width: 100%;
+ height: 5px;
+ background-color: #FBF8BE;
+}
+
+.Services{
+    height: 500px;
+    background-color: #275577;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 52px;
+}
+
+
+
+footer{
+background-color: #234E70;
+height: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:15px;
+font-family: 'Roboto', sans-serif;
+color: white;
+flex-direction: column;
+}
+
+footer a {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Services iframe{
+    width: 350px;
+    height: 350px;
+}
+.BOXY{
+    background-color: #1a3e59;
+    padding: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: left;
+    width: 250px;
+    height: 250px;
+}
+.BOXY button{
+    width: 35%;
+    height: 35px;
+    background-color: rgb(202, 74, 74);
+    color: white;
+    font-size: 25px;
+}
+.FORM{
+    width:250px;
+    text-align: right;
+}
+
+
+
+
+.ABOUT{
+    height: auto;
+    padding-block: 100px;
+    width: 100%;
+    background-color: #1a3e59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    flex-wrap: wrap;
+}
+.ABOUT a{
+    font-weight: bold;
+    font-size: 20px;
+    color:rgb(242, 104, 104)
+}
+.ABOUTS{
+    width: 500px;
+    height: 300px;
+    background-color: rgb(44, 85, 122);
+     display: flex;
+     flex-direction: column;
+     border-radius: 5px;
+}
+
+.ABOUTS p , .ABOUTS h1{
+    margin-inline: 15px;
+    text-align: center;
+}
+
+#FAQ{
+    background-color: rgb(63, 96, 124);
+    width: 500px;
+}
+
+
+.FAQCONTAINER{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(63, 96, 124);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding-block: 50px;
+}
+
+@media screen and (max-width: 950px) {
+    #ITEMS{
+        display: none;
+    }
+    #HAM{
+        display: flex;
+    }
+  }
